@@ -6,3 +6,5 @@ h1{margin:0;font-size:1.9rem} h1 span{color:#F2B705}
 h2{color:#F2B705;margin-top:2rem}
 a{color:#F2B705}
 footer{margin-top:3rem;font-size:.9rem;opacity:.8;border-top:1px solid #1d5a4d;padding-top:1rem}
+.lang{text-align:right;font-size:.9rem;margin:0 0 1rem}
+.badge{display:inline-block;border:1px solid #F2B705;border-radius:6px;padding:4px 10px;font-weight:600}

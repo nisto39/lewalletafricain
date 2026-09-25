@@ -1,24 +1,37 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Règles de confidentialité – Le Wallet Africain / Content Bot</title><link rel="stylesheet" href="style.css"><link rel="icon" href="logo.png"></head><body><div class="wrap">
+<title>Règles de confidentialité – Le Wallet Africain / Content Bot</title><link rel="alternate" hreflang="en" href="privacy-en.html"><link rel="stylesheet" href="style.css"><link rel="icon" href="logo.png"></head><body><div class="wrap">
+<p class="lang"><strong>FR</strong> · <a href="privacy-en.html" lang="en">EN</a></p>
 <header><img src="logo.png" alt="Logo Le Wallet Africain"><h1>Règles de <span>confidentialité</span></h1></header>
 <p>Dernière mise à jour : 25 septembre 2026.</p>
 <p>Ces règles s'appliquent au site Le Wallet Africain et à l'application interne « Content Bot », utilisée pour publier des vidéos sur la chaîne YouTube <a href="https://www.youtube.com/@lewalletafricain">Le Wallet Africain</a>.</p>
+<h2>Content Bot utilise les services API YouTube</h2>
+<p><strong>Content Bot utilise les services API YouTube (YouTube API Services).</strong> En utilisant Content Bot, l'utilisateur accepte d'être lié par les <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a>. Les données traitées par Google sont soumises aux <a href="http://www.google.com/policies/privacy">Règles de confidentialité de Google</a> (<a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>).</p>
 <h2>Qui utilise l'application</h2>
 <p>Content Bot est utilisé uniquement par l'éditeur de la chaîne Le Wallet Africain, pour gérer sa propre chaîne YouTube. Aucun autre utilisateur ne se connecte à l'application.</p>
 <h2>Données Google utilisées</h2>
 <p>Avec l'autorisation de l'éditeur, l'application accède à son compte YouTube via l'API YouTube Data (autorisations <code>youtube.upload</code> et <code>youtube.force-ssl</code>) afin de :</p>
-<ul><li>mettre en ligne les vidéos préparées et validées manuellement ;</li><li>gérer les métadonnées de ces vidéos (titre, description, sous-titres) et lire les informations de base de la chaîne.</li></ul>
-<p>L'application n'accède à aucune autre donnée Google (e-mails, contacts, fichiers, etc.).</p>
-<h2>Stockage et sécurité</h2>
-<p>Le jeton d'autorisation OAuth est conservé sur un serveur privé, dans un fichier accessible uniquement au compte système de l'application. Les données ne sont ni vendues, ni partagées, ni transférées à des tiers, et ne sont pas utilisées à des fins publicitaires ni pour entraîner des modèles d'IA.</p>
+<ul><li>mettre en ligne les vidéos préparées et validées manuellement ;</li><li>gérer les métadonnées de ces vidéos (titre, description, sous-titres, miniature) et lire les informations de base de la chaîne.</li></ul>
+<p>L'application n'accède à aucune autre donnée Google (e-mails, contacts, fichiers, etc.) et ne collecte aucune donnée concernant d'autres utilisateurs ou chaînes YouTube.</p>
+<h2>Données stockées</h2>
+<ul>
+<li><strong>Jeton d'autorisation OAuth</strong> de l'éditeur, conservé sur un serveur privé, dans un fichier accessible uniquement au compte système de l'application ;</li>
+<li><strong>identifiants et métadonnées des vidéos de l'éditeur</strong> publiées par l'outil (identifiant de vidéo, titre, description, tags, sous-titres, miniature) ;</li>
+<li><strong>journaux techniques</strong> de fonctionnement (dates, identifiants de vidéos, erreurs).</li>
+</ul>
+<p>Les données issues de l'API YouTube (y compris celles figurant dans les journaux) sont rafraîchies ou supprimées dans un délai maximal de 30 jours.</p>
+<h2>Utilisation, partage et sécurité</h2>
+<p>Ces données servent uniquement à publier et gérer les vidéos de la chaîne de l'éditeur. Elles ne sont ni vendues, ni partagées, ni transférées à des tiers, et ne sont pas utilisées à des fins publicitaires ni pour entraîner des modèles d'IA.</p>
 <p>L'utilisation et le transfert par Content Bot des informations reçues des API Google respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy">Règles relatives aux données utilisateur des services API Google</a>, y compris les exigences d'utilisation limitée (Limited Use).</p>
-<h2>Services tiers</h2>
-<p>Les vidéos publiées sont soumises aux <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a> et aux <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>.</p>
 <h2>Révoquer l'accès et suppression</h2>
-<p>L'accès peut être révoqué à tout moment depuis <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Le jeton est alors supprimé du serveur sur simple demande à l'adresse ci-dessous.</p>
+<p>L'accès de Content Bot au compte Google peut être révoqué à tout moment :</p>
+<ul>
+<li><strong>depuis l'outil</strong> : la commande Telegram <code>/revoke</code> de Content Bot révoque immédiatement le jeton auprès de Google (via <code>https://oauth2.googleapis.com/revoke</code>) et le supprime du serveur ;</li>
+<li><strong>depuis la page de sécurité Google</strong> : <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a> (également accessible via <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>).</li>
+</ul>
+<p>Après une révocation, le jeton et toutes les données API stockées sont supprimés dans un délai de 7 jours.</p>
 <h2>Visiteurs du site</h2>
-<p>Ce site n'utilise ni cookies, ni outil de suivi, ni formulaire.</p>
+<p>Ce site n'utilise ni cookies, ni outil de suivi, ni formulaire. Les liens courts <code>/go/…</code> de ce site ne font qu'une redirection vers le site de destination : ils n'enregistrent rien (pas de cookies, pas de suivi, pas de statistiques). Le site de destination applique ses propres règles. Le site est hébergé par GitHub Pages, qui peut conserver des journaux techniques pour la sécurité du service (voir la <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité de GitHub</a>).</p>
 <h2>Contact</h2>
-<p><a href="mailto:sniaboukane@gmail.com">sniaboukane@gmail.com</a></p>
-<footer><a href="index.html">Accueil</a> · <a href="terms.html">Conditions d'utilisation</a></footer>
+<p>Pour toute question ou réclamation concernant ces règles : <a href="mailto:sniaboukane@gmail.com">sniaboukane@gmail.com</a></p>
+<footer><a href="index.html">Accueil</a> · <a href="terms.html">Conditions d'utilisation</a> · <a href="privacy-en.html" lang="en">English</a></footer>
 </div></body></html>
