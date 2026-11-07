@@ -1,0 +1,14 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>TikTok – autorisation / authorization</title><link rel="stylesheet" href="style.css"><link rel="icon" href="logo.png"></head><body><div class="wrap">
+<header><img src="logo.png" alt="Logo Le Wallet Africain"><h1>Autorisation <span>TikTok</span></h1></header>
+<p>Copiez le code ci-dessous dans Content Bot. / Copy the code below into Content Bot.</p>
+<p><strong>code :</strong> <code id="code">—</code></p>
+<p><strong>state :</strong> <code id="state">—</code></p>
+<p id="err"></p>
+<script>
+const p=new URLSearchParams(location.search);
+document.getElementById('code').textContent=p.get('code')||'—';
+document.getElementById('state').textContent=p.get('state')||'—';
+if(p.get('error'))document.getElementById('err').textContent='Erreur / Error : '+p.get('error')+' '+(p.get('error_description')||'');
+</script>
+</div></body></html>
